@@ -1,6 +1,6 @@
 language: c
 compiler:
   - gcc
-  - clang
-# Change this to your needs
+before_script:
+    - sudo apt-get install gawk
 script: autoreconf -vi && ./configure && make && make check
