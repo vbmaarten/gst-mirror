@@ -2,4 +2,4 @@ language: c
 compiler:
   - gcc
 before_script: sudo apt-get install gawk libsigsegv-dev texinfo
-script: makeinfo && autoreconf -vi && ./configure && make && make check
+script: autoreconf -vi && ./configure && make && make check
