@@ -1,5 +1,5 @@
 language: c
 compiler:
   - gcc
-before_script: sudo apt-get install gawk
+before_script: sudo apt-get install gawk libsigsegv-dev
 script: autoreconf -vi && ./configure && make && make check
